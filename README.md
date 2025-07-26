@@ -24,9 +24,7 @@ Follow these steps to install the extension in your Chrome browser:
 
      ```
      git clone <repository_url>
-     cd word_counter_extension
-     
-     
+     cd word_counter_extension     
      ```
 
 2. **Open Chrome Extensions Page:**
@@ -70,17 +68,19 @@ Once installed, using the extension is straightforward:
 5. **Use the Popup (Optional):** If you prefer, you can still click the extension's icon in the toolbar after selecting text to see the word count in a small popup window.
 
 ## 📁 File Structure
+   ```
+      The extension consists of the following files:
 
-The extension consists of the following files:
-word_counter_extension/
-├── manifest.json
-├── popup.html
-├── popup.js
-├── content.js
-└── icons/
-├── icon16.png
-├── icon48.png
-└── icon128.png
+      word_counter_extension/
+      ├── manifest.json
+      ├── popup.html
+      ├── popup.js
+      ├── content.js
+      └── icons/
+      ├── icon16.png
+      ├── icon48.png
+      └── icon128.png
+   ```
 
 * **`manifest.json`**: Defines the extension's metadata, permissions, and specifies which scripts run where.
 
