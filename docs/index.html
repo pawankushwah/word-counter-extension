@@ -97,15 +97,6 @@
                 background-color: #4f46e5; /* bg-indigo-600 */
                 transform: translateY(-2px);
             }
-            .warning {
-                background-color: #fefcbf; /* bg-yellow-100 */
-                color: #92400e; /* text-yellow-800 */
-                padding: 1rem;
-                border-radius: 0.5rem;
-                border: 1px solid #fcd34d; /* border-yellow-400 */
-                margin-top: 1.5rem;
-                text-align: left;
-            }
             code {
                 background-color: #e2e8f0; /* bg-gray-200 */
                 padding: 0.2em 0.4em;
@@ -146,23 +137,16 @@
             </p>
 
             <a
-                href="https://pawankushwah.github.io/word-counter-extension/download/word_counter_extension"
+                href="https://pawankushwah.github.io/word-counter-extension/download/word counter extension.zip"
                 class="button m-auto"
                 download
             >
-                Download Extension (.crx)
+                Download Extension (.zip)
             </a>
 
-            <div class="warning">
-                <p class="font-bold">Important Security Notice:</p>
-                <p>
-                    Chrome shows warnings for extensions downloaded outside the
-                    Chrome Web Store. This is normal for directly hosted
-                    extensions. Follow the steps below carefully to install.
-                </p>
-            </div>
-
-            <h2 class="text-2xl font-semibold">Installation Instructions</h2>
+            <h2 class="text-2xl font-semibold">
+                Installation Instructions (Unpacked Extension)
+            </h2>
             <p class="text-left">
                 Since this extension is hosted directly on GitHub and not the
                 Chrome Web Store, you'll need to follow a few manual steps to
@@ -170,54 +154,72 @@
             </p>
             <ul class="list-decimal list-inside marker:text-red-500">
                 <li>
-                    <strong>Download the `.crx` file:</strong> Click the
-                    "Download Extension (.crx)" button above. Chrome will
+                    <strong>Download the `.zip` file:</strong> Click the
+                    "Download Extension (.zip)" button above. Chrome will
                     download the file to your "Downloads" folder and might show
                     a warning. <strong>Do NOT click "Discard"</strong> if
                     prompted; choose "Keep" or similar.
+                    <br>
+                    <img src="./images/down1.png" width="" alt="1">
+                </li>
+                <li>
+                    <strong>Extract the Zip File:</strong> Locate the downloaded
+                    `word_counter_extension.zip` file in your "Downloads"
+                    folder. **Right-click** on it and choose "Extract All,"
+                    "Unzip," or a similar option to extract its contents into a
+                    new folder (e.g., `word_counter_extension`). Remember where
+                    you extract this folder.
+                    <img src="./images/down2.png" width="" alt="2">
                 </li>
                 <li>
                     <strong>Open Chrome Extensions Page:</strong> In your Chrome
                     browser, type
                     <code class="select-all">chrome://extensions</code> into the
                     address bar and press <kbd>Enter</kbd>.
+                    <img src="./images/down3.png" width="" alt="3">
                 </li>
                 <li>
                     <strong>Enable Developer Mode:</strong> On the Chrome
                     Extensions page, locate the
                     <strong>"Developer mode"</strong> toggle switch in the
-                    top-right corner of the page and turn it
-                    <strong>ON</strong>.
+                    top-right corner of the page and turn it **ON**.
+                    <img src="./images/down4.png" width="" alt="4">
                 </li>
                 <li>
-                    <strong>Drag and Drop:</strong> Find the downloaded
-                    `word_counter_extension.crx` file. You can usually see it in
-                    the downloads bar at the bottom of your Chrome window.
-                    <strong
-                        >Drag this `.crx` file from your downloads bar (or from
-                        your computer's "Downloads" folder) and drop it anywhere
-                        onto the `chrome://extensions` page.</strong
-                    >
-                </li>
-                <li>
-                    <strong>Confirm Installation:</strong> A confirmation dialog
-                    will appear, asking you to confirm the installation. Click
-                    <strong>"Add extension"</strong> to complete the process.
+                    <strong>Load Unpacked Extension:</strong> Click the **"Load
+                    unpacked"** button that appears. A file dialog will open.
+                    Navigate to and **select the extracted
+                    `word_counter_extension` folder** (the one containing
+                    `manifest.json`), then click "Select Folder."
+                    <img src="./images/down5.png" width="" alt="5"><br>
+                    <h3 class="text-lg font-semibold">Browse file</h3>
+                    <img src="./images/down6.png" width="" alt="6"><br>
+                    <img src="./images/down7.png" width="" alt="7">
                 </li>
                 <li>
                     <strong>Pin the Extension (Optional):</strong> For easy
                     access, click the puzzle piece icon (Extensions icon) in
                     your Chrome toolbar, find "Selected Word Counter," and click
                     the pin icon next to it.
+                    <img src="./images/down8.png" width="" alt="8">
                 </li>
             </ul>
 
-            <h2 class="text-2xl font-semibold">For Future Updates</h2>
-            <p>
-                This extension is configured to check for updates periodically.
-                When a new version is released, Chrome will automatically update
-                it in the background.
-            </p>
+            <h2 class="text-2xl font-semibold">Important Notes for Unpacked Extensions</h2>
+            <ul>
+                <li>
+                    **No Automatic Updates:** Extensions loaded via "Load
+                    unpacked" do not receive automatic updates. If a new version
+                    is released, you will need to download the new zip, extract
+                    it, and re-load it using the "Load unpacked" button (you
+                    might need to remove the old version first).
+                </li>
+                <li>
+                    **Developer Mode:** Developer mode must remain enabled for
+                    the extension to run. If you turn it off, the extension will
+                    be disabled.
+                </li>
+            </ul>
         </div>
     </body>
 </html>
