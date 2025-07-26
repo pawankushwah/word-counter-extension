@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Selected Word Counter Extension</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and overall layout */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px; /* Add some padding for smaller screens */
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff; /* White background for the container */
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            padding: 2.5rem; /* More padding */
+            width: 100%;
+            max-width: 800px; /* Max width for larger screens */
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem; /* Space between elements */
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1a202c; /* text-gray-900 */
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 600; /* font-semibold */
+            color: #2d3748; /* text-gray-800 */
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            color: #4a5568; /* text-gray-700 */
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        ol {
+            list-style: decimal;
+            text-align: left;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            color: #4a5568;
+        }
+        ol li {
+            margin-bottom: 0.75rem;
+        }
+        a.button {
+            display: inline-block;
+            background-color: #6366f1; /* bg-indigo-500 */
+            color: #ffffff; /* text-white */
+            padding: 1rem 2rem;
+            border-radius: 0.75rem; /* rounded-xl */
+            font-weight: 600; /* font-semibold */
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+        }
+        a.button:hover {
+            background-color: #4f46e5; /* bg-indigo-600 */
+            transform: translateY(-2px);
+        }
+        .warning {
+            background-color: #fefcbf; /* bg-yellow-100 */
+            color: #92400e; /* text-yellow-800 */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #fcd34d; /* border-yellow-400 */
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+        code {
+            background-color: #e2e8f0; /* bg-gray-200 */
+            padding: 0.2em 0.4em;
+            border-radius: 0.25rem;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+            font-size: 0.875em;
+            color: #2d3748;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.75rem; /* text-3xl */
+            }
+            h2 {
+                font-size: 1.25rem; /* text-xl */
+            }
+            a.button {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Download Selected Word Counter Extension</h1>
+        <p class="text-lg text-gray-600">
+            Get the Chrome extension that counts words in real-time as you select text on any webpage.
+        </p>
+
+        <a href="https://pawankushwah.github.io/word-counter-extension/word_counter_extension.crx" class="button" download>
+            Download Extension (.crx)
+        </a>
+
+        <div class="warning">
+            <p class="font-bold">Important Security Notice:</p>
+            <p>
+                Chrome shows warnings for extensions downloaded outside the Chrome Web Store.
+                This is normal for directly hosted extensions. Follow the steps below carefully to install.
+            </p>
+        </div>
+
+        <h2>Installation Instructions</h2>
+        <p>
+            Since this extension is hosted directly on GitHub and not the Chrome Web Store,
+            you'll need to follow a few manual steps to install it in your Chrome browser.
+        </p>
+        <ol>
+            <li>
+                **Download the `.crx` file:** Click the "Download Extension (.crx)" button above.
+                Chrome will download the file to your "Downloads" folder and might show a warning.
+                **Do NOT click "Discard"** if prompted; choose "Keep" or similar.
+            </li>
+            <li>
+                **Open Chrome Extensions Page:** In your Chrome browser, type <code class="select-all">chrome://extensions</code> into the address bar and press <kbd>Enter</kbd>.
+            </li>
+            <li>
+                **Enable Developer Mode:** On the Chrome Extensions page, locate the **"Developer mode"** toggle switch in the top-right corner of the page and turn it **ON**.
+            </li>
+            <li>
+                **Drag and Drop:** Find the downloaded `word_counter_extension.crx` file.
+                You can usually see it in the downloads bar at the bottom of your Chrome window.
+                **Drag this `.crx` file from your downloads bar (or from your computer's "Downloads" folder) and drop it anywhere onto the `chrome://extensions` page.**
+            </li>
+            <li>
+                **Confirm Installation:** A confirmation dialog will appear, asking you to confirm the installation. Click **"Add extension"** to complete the process.
+            </li>
+            <li>
+                **Pin the Extension (Optional):** For easy access, click the puzzle piece icon (Extensions icon) in your Chrome toolbar, find "Selected Word Counter," and click the pin icon next to it.
+            </li>
+        </ol>
+
+        <h2>For Future Updates</h2>
+        <p>
+            This extension is configured to check for updates periodically. When a new version is released,
+            Chrome will automatically update it in the background.
+        </p>
+    </div>
+</body>
+</html>
