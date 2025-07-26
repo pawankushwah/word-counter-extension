@@ -48,14 +48,15 @@
             line-height: 1.6;
             margin-bottom: 1rem;
         }
-        ol {
-            list-style: decimal;
+        /* Styling for both ordered and unordered lists */
+        ol, ul {
+            list-style: disc; /* Default to disc for bullets */
             text-align: left;
             margin-left: 2rem;
             margin-bottom: 1.5rem;
             color: #4a5568;
         }
-        ol li {
+        ol li, ul li {
             margin-bottom: 0.75rem;
         }
         a.button {
@@ -68,6 +69,9 @@
             text-decoration: none;
             transition: background-color 0.3s ease, transform 0.1s ease;
             box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+            /* Responsive adjustments for button */
+            width: fit-content; /* Allow button to size naturally */
+            box-sizing: border-box; /* Include padding in width calculation */
         }
         a.button:hover {
             background-color: #4f46e5; /* bg-indigo-600 */
@@ -105,17 +109,20 @@
                 padding: 0.75rem 1.5rem;
                 font-size: 0.9rem;
             }
+            ol, ul {
+                margin-left: 1rem; /* Reduce margin for smaller screens */
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Download Selected Word Counter Extension</h1>
-        <p class="text-lg text-gray-600">
+    <div class="container max-w-3xl mx-auto">
+        <h1 class="text-3xl font-bold mb-4">Word Counter Extension</h1>
+        <p class="text-lg text-gray-600 px-20">
             Get the Chrome extension that counts words in real-time as you select text on any webpage.
         </p>
 
-        <a href="https://pawankushwah.github.io/word-counter-extension/word_counter_extension.crx" class="button" download>
+        <a href="https://pawankushwah.github.io/word-counter-extension/word_counter_extension.crx" class="button m-auto" download>
             Download Extension (.crx)
         </a>
 
@@ -127,37 +134,37 @@
             </p>
         </div>
 
-        <h2>Installation Instructions</h2>
-        <p>
+        <h2 class="text-2xl font-semibold">Installation Instructions</h2>
+        <p class="text-left">
             Since this extension is hosted directly on GitHub and not the Chrome Web Store,
             you'll need to follow a few manual steps to install it in your Chrome browser.
         </p>
-        <ol>
+        <ul class="list-decimal list-inside marker:text-red-500">
             <li>
-                **Download the `.crx` file:** Click the "Download Extension (.crx)" button above.
+                <strong>Download the `.crx` file:</strong> Click the "Download Extension (.crx)" button above.
                 Chrome will download the file to your "Downloads" folder and might show a warning.
-                **Do NOT click "Discard"** if prompted; choose "Keep" or similar.
+                <strong>Do NOT click "Discard"</strong> if prompted; choose "Keep" or similar.
             </li>
             <li>
-                **Open Chrome Extensions Page:** In your Chrome browser, type <code class="select-all">chrome://extensions</code> into the address bar and press <kbd>Enter</kbd>.
+                <strong>Open Chrome Extensions Page:</strong> In your Chrome browser, type <code class="select-all">chrome://extensions</code> into the address bar and press <kbd>Enter</kbd>.
             </li>
             <li>
-                **Enable Developer Mode:** On the Chrome Extensions page, locate the **"Developer mode"** toggle switch in the top-right corner of the page and turn it **ON**.
+                <strong>Enable Developer Mode:</strong> On the Chrome Extensions page, locate the <strong>"Developer mode"</strong> toggle switch in the top-right corner of the page and turn it <strong>ON</strong>.
             </li>
             <li>
-                **Drag and Drop:** Find the downloaded `word_counter_extension.crx` file.
+                <strong>Drag and Drop:</strong> Find the downloaded `word_counter_extension.crx` file.
                 You can usually see it in the downloads bar at the bottom of your Chrome window.
-                **Drag this `.crx` file from your downloads bar (or from your computer's "Downloads" folder) and drop it anywhere onto the `chrome://extensions` page.**
+                <strong>Drag this `.crx` file from your downloads bar (or from your computer's "Downloads" folder) and drop it anywhere onto the `chrome://extensions` page.</strong>
             </li>
             <li>
-                **Confirm Installation:** A confirmation dialog will appear, asking you to confirm the installation. Click **"Add extension"** to complete the process.
+                <strong>Confirm Installation:</strong> A confirmation dialog will appear, asking you to confirm the installation. Click <strong>"Add extension"</strong> to complete the process.
             </li>
             <li>
-                **Pin the Extension (Optional):** For easy access, click the puzzle piece icon (Extensions icon) in your Chrome toolbar, find "Selected Word Counter," and click the pin icon next to it.
+                <strong>Pin the Extension (Optional):</strong> For easy access, click the puzzle piece icon (Extensions icon) in your Chrome toolbar, find "Selected Word Counter," and click the pin icon next to it.
             </li>
-        </ol>
+        </ul>
 
-        <h2>For Future Updates</h2>
+        <h2 class="text-2xl font-semibold">For Future Updates</h2>
         <p>
             This extension is configured to check for updates periodically. When a new version is released,
             Chrome will automatically update it in the background.
